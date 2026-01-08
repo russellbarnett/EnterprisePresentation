@@ -5,8 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>BrandStudios.AI — Enterprise Creative Operating System</title>
-  <meta name="description"
-    content="BrandStudios.AI is the operating system for enterprise brand creative. It connects tools, centralizes brand truth, and embeds human brand judgment into AI-powered workflows." />
+  <meta name="description" content="BrandStudios.AI is the operating system for enterprise brand creative." />
   <link
     href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap"
     rel="stylesheet" />
@@ -21,7 +20,6 @@
       --text-light: #5a6270;
       --blue: #5b8fd9;
       --sage: #8faf8a;
-      /* fixed */
       --coral: #e07a5f;
       --serif: 'Playfair Display', Georgia, serif;
       --sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -205,7 +203,6 @@
       color: #fff;
     }
 
-    /* 5 Pillars */
     .pillars-5 {
       display: grid;
       grid-template-columns: repeat(5, 1fr);
@@ -312,18 +309,12 @@
       color: var(--text-light);
     }
 
-    /* Market-failure blocks */
-    .problem-stack {
-      display: grid;
-      gap: 16px;
-      margin-top: 28px;
-    }
-
     .problem-chip {
       background: rgba(255, 255, 255, 0.06);
       border: 1px solid rgba(255, 255, 255, 0.10);
       border-radius: 14px;
-      padding: 18px 18px;
+      padding: 18px;
+      margin-bottom: 12px;
     }
 
     .problem-chip h4 {
@@ -340,7 +331,6 @@
       opacity: 0.9;
     }
 
-    /* Metrics */
     .metrics {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -360,7 +350,6 @@
       color: #10b981;
     }
 
-    /* Fidelity */
     .fidelity-card {
       background: linear-gradient(160deg, #1a2028 0%, #0f1419 100%);
       border-radius: 20px;
@@ -453,7 +442,6 @@
       gap: 12px;
     }
 
-    /* Tools */
     .tools-container {
       background: var(--warm-white);
       border-radius: 20px;
@@ -537,7 +525,6 @@
       color: var(--navy);
     }
 
-    /* Feature List */
     .feature-list {
       list-style: none;
       margin-top: 32px;
@@ -566,7 +553,6 @@
       flex-shrink: 0;
     }
 
-    /* CTA */
     .cta-card {
       background: var(--navy);
       color: #fff;
@@ -582,13 +568,207 @@
       line-height: 1.5;
     }
 
-    /* Responsive */
+    .comparison-section {
+      background: var(--warm-white);
+      border-radius: 20px;
+      padding: 32px;
+      margin-top: 48px;
+    }
+
+    .comparison-header {
+      display: grid;
+      grid-template-columns: 120px 1fr 1fr;
+      gap: 0;
+      margin-bottom: 0;
+    }
+
+    .comparison-header-cell {
+      padding: 16px 20px;
+    }
+
+    .comparison-header-cell.tools {
+      background: #f5f5f3;
+      border-radius: 8px 0 0 0;
+    }
+
+    .comparison-header-cell.os {
+      background: var(--navy);
+      color: #fff;
+      border-radius: 0 8px 0 0;
+    }
+
+    .comparison-header-cell h4 {
+      font-size: 0.65rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      opacity: 0.6;
+      margin-bottom: 4px;
+    }
+
+    .comparison-header-cell h3 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    .comparison-header-cell p {
+      font-size: 0.8rem;
+      opacity: 0.7;
+    }
+
+    .comparison-header-cell .tool-tags {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+      margin-top: 8px;
+    }
+
+    .comparison-header-cell .tool-tag {
+      font-size: 0.7rem;
+      padding: 4px 10px;
+      background: rgba(0, 0, 0, 0.06);
+      border-radius: 100px;
+    }
+
+    .comparison-row {
+      display: grid;
+      grid-template-columns: 120px 1fr 1fr;
+      gap: 0;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+    }
+
+    .comparison-row:last-child {
+      border-bottom: none;
+    }
+
+    .comparison-cell {
+      padding: 16px 20px;
+      font-size: 0.9rem;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .comparison-cell.label {
+      font-weight: 600;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-light);
+    }
+
+    .comparison-cell.tools-col {
+      background: #fafaf8;
+    }
+
+    .comparison-cell.os-col {
+      background: rgba(15, 20, 25, 0.03);
+    }
+
+    .comparison-cell .check {
+      color: var(--text-light);
+    }
+
+    .comparison-cell .check-green {
+      color: #10b981;
+      font-weight: 600;
+    }
+
+    .operating-layer-card {
+      background: var(--navy);
+      border-radius: 16px;
+      padding: 28px 32px;
+      color: #fff;
+      margin-top: 48px;
+    }
+
+    .operating-layer-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .operating-layer-header h4 {
+      font-size: 0.7rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--orange);
+    }
+
+    .operating-layer-header .orchestration-tag {
+      font-size: 0.7rem;
+      padding: 6px 14px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 100px;
+    }
+
+    .operating-layer-title {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .operating-layer-subtitle {
+      font-size: 0.9rem;
+      opacity: 0.7;
+      margin-bottom: 24px;
+    }
+
+    .operating-layer-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+    }
+
+    .operating-layer-item {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 10px;
+      padding: 16px;
+    }
+
+    .operating-layer-item h5 {
+      font-size: 0.65rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 8px;
+    }
+
+    .operating-layer-item h5.blue {
+      color: var(--blue);
+    }
+
+    .operating-layer-item h5.gray {
+      color: #888;
+    }
+
+    .operating-layer-item h5.green {
+      color: #10b981;
+    }
+
+    .operating-layer-item h5.coral {
+      color: var(--coral);
+    }
+
+    .operating-layer-item p {
+      font-size: 0.85rem;
+      opacity: 0.8;
+      line-height: 1.4;
+    }
+
     @media (max-width: 1200px) {
       .pillars-5 {
         grid-template-columns: repeat(3, 1fr);
       }
 
       .metrics {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .operating-layer-grid {
         grid-template-columns: repeat(2, 1fr);
       }
     }
@@ -611,6 +791,11 @@
       .slide-footer {
         left: 48px;
         right: 48px;
+      }
+
+      .comparison-header,
+      .comparison-row {
+        grid-template-columns: 100px 1fr 1fr;
       }
     }
 
@@ -640,6 +825,10 @@
         right: 28px;
         bottom: 28px;
       }
+
+      .operating-layer-grid {
+        grid-template-columns: 1fr;
+      }
     }
   </style>
 </head>
@@ -654,88 +843,50 @@
     <div class="slide-inner center">
       <p class="eyebrow">Enterprise Creative Operating System</p>
       <h1 class="display">The operating system<br><em>for enterprise brand creative</em></h1>
-      <p class="body-lg" style="margin-top:48px;max-width:900px;margin-left:auto;margin-right:auto">
-        BrandStudios.AI connects tools, centralizes brand truth, and embeds human brand judgment into AI-powered
-        workflows —
-        so creative scale increases coherence, not risk.
-      </p>
+      <p class="body-lg" style="margin-top:48px;max-width:900px;margin-left:auto;margin-right:auto">BrandStudios.AI
+        connects tools, centralizes brand truth, and embeds senior human judgment into AI-powered workflows — so
+        creative scale increases coherence, not risk.</p>
       <div style="margin-top:80px">
         <div class="logo" style="font-size:2.5rem">BrandStudios<span>.AI</span></div>
       </div>
     </div>
   </section>
 
-  <!-- Slide 2: Problem -->
+  <!-- Slide 2: Problem - Systemic Drift -->
   <section class="slide">
     <div class="slide-inner">
       <div class="split">
         <div>
-          <h2 class="headline">Enterprise Creative<br><em>Under Load</em></h2>
-
-          <p class="body-xl" style="margin-top:40px">
-            Enterprises don’t have a creativity problem. They have a scale problem.
-          </p>
-
-          <p class="body-lg" style="margin-top:20px;color:var(--text-light)">
-            Teams multiply. Markets localize. Channels expand.
-            The volume rises faster than brand judgment can.
-          </p>
-
-          <p class="body-xl" style="margin-top:28px;font-weight:600;color:var(--navy)">
-            AI made production faster. It didn’t make the brand system smarter.
-          </p>
-
-          <p class="body-lg" style="margin-top:18px;color:var(--text-light)">
-            “On-brand” is table stakes.
-            The real failures come from work that is technically compliant but strategically wrong, culturally off, or
-            compositionally careless.
-          </p>
-
-          <p class="statement">
-            Scale without governance becomes drift.<br>
-            Governance without learning becomes a bottleneck.
-          </p>
+          <p class="eyebrow">The Market Reality</p>
+          <h2 class="headline">The Market Problem:<br><em>Systemic Drift</em></h2>
+          <p class="body-xl" style="margin-top:40px">Enterprise marketing has crossed a structural threshold. Content
+            volume has exploded, but judgment has not scaled.</p>
+          <p class="body-lg" style="margin-top:20px;color:var(--text-light)">Most AI systems optimize for speed and
+            cost. They execute without memory and without taste.</p>
+          <p class="body-xl" style="margin-top:28px;font-weight:600;color:var(--navy)">The Erosion Pattern:</p>
+          <p class="body-lg" style="margin-top:12px;color:var(--text-light)">Brands look active but feel thinner.
+            Performance metrics rise while distinctiveness falls. Creative quality varies across teams, agencies, and
+            markets.</p>
+          <p class="statement">This is no longer a marketing issue. It is a risk to brand value.<br><br>This is not a
+            technology decision. It is a leadership decision about who controls brand meaning at scale.</p>
         </div>
-
         <div class="card-dark" style="padding:44px 42px">
-          <div style="display:flex;align-items:center;gap:14px;margin-bottom:22px">
-            <div
-              style="width:44px;height:44px;background:rgba(232,93,45,0.2);border-radius:12px;display:flex;align-items:center;justify-content:center">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#e85d2d" stroke-width="2">
-                <path
-                  d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
-              </svg>
-            </div>
-            <p
-              style="font-size:0.75rem;font-weight:600;text-transform:uppercase;letter-spacing:0.1em;color:var(--orange)">
-              What’s missing</p>
+          <p
+            style="font-size:0.75rem;font-weight:600;text-transform:uppercase;letter-spacing:0.1em;color:var(--orange);margin-bottom:22px">
+            What's missing</p>
+          <p style="font-family:var(--serif);font-size:1.55rem;font-style:italic;line-height:1.45;color:#fff">Tools
+            create content.<br>Enterprises need a system that governs what ships.</p>
+          <div class="problem-chip" style="margin-top:28px">
+            <h4>More Generators</h4>
+            <p>Increase volume. They don't centralize truth or enforce enterprise judgment.</p>
           </div>
-
-          <p style="font-family:var(--serif);font-size:1.55rem;font-style:italic;line-height:1.45;color:#fff">
-            Tools create content.<br>
-            Enterprises need a system that governs what ships.
-          </p>
-
-          <div class="problem-stack">
-            <div class="problem-chip">
-              <h4>More Generators</h4>
-              <p>Increase volume. They don’t centralize truth or enforce enterprise judgment.</p>
-            </div>
-            <div class="problem-chip">
-              <h4>More Workflow</h4>
-              <p>Moves tasks. It doesn’t measure brand-grade quality or contain drift.</p>
-            </div>
-            <div class="problem-chip">
-              <h4>More Guidelines</h4>
-              <p>Explain intent. They don’t operate at speed across teams, markets, and agencies.</p>
-            </div>
+          <div class="problem-chip">
+            <h4>More Workflow</h4>
+            <p>Moves tasks. It doesn't measure brand-grade quality or contain drift.</p>
           </div>
-
-          <div style="margin-top:26px;padding-top:22px;border-top:1px solid rgba(255,255,255,0.1)">
-            <p style="font-size:0.85rem;opacity:0.75;line-height:1.6">
-              BrandStudios.AI is the missing operating layer: centralized truth + measurable governance + human judgment
-              at the moments that matter.
-            </p>
+          <div class="problem-chip" style="margin-bottom:0">
+            <h4>More Guidelines</h4>
+            <p>Explain intent. They don't operate at speed across teams, markets, and agencies.</p>
           </div>
         </div>
       </div>
@@ -743,33 +894,21 @@
     <div class="slide-footer"><span class="logo">BrandStudios<span>.AI</span></span><span>2</span></div>
   </section>
 
-  <!-- Slide 3: What Is -->
+  <!-- Slide 3: Human Intelligence Operating Layer -->
   <section class="slide">
     <div class="slide-inner">
       <div style="display:grid;grid-template-columns:1.1fr 0.9fr;gap:80px;align-items:center">
         <div>
-          <h2 class="headline" style="font-size:clamp(2.5rem,5vw,4rem)"><em>What Is</em><br>BrandStudios.AI</h2>
-
-          <p class="subhead" style="margin-top:40px;font-weight:500;color:var(--navy)">
-            The operating system for enterprise brand creative.
-          </p>
-
-          <p class="body-md" style="margin-top:16px;line-height:1.8">
-            It connects tools, centralizes brand truth, and embeds human brand judgment into AI-powered workflows.
-          </p>
-
-          <p class="body-lg" style="margin-top:28px;line-height:1.8">
-            BrandStudios.AI learns your brand from your best approved work —
-            visually, verbally, and structurally —
-            then governs new work against that standard.
-          </p>
-
-          <p class="body-lg" style="margin-top:18px;line-height:1.8;color:var(--text-light)">
-            We measure that standard with <strong>Brand Grade</strong>.
-            We contain deviation with <strong>Brand Drift</strong>.
-            Humans remain the authority through <strong>Human Intelligence</strong>.
-          </p>
-
+          <p class="eyebrow">What BrandStudios.AI Is</p>
+          <h2 class="headline" style="font-size:clamp(2.5rem,5vw,4rem)"><em>The Human Intelligence</em><br>Operating
+            Layer</h2>
+          <p class="subhead" style="margin-top:40px;font-weight:500;color:var(--navy)">The operating system for
+            enterprise brand creative.</p>
+          <p class="body-md" style="margin-top:16px;line-height:1.8">It connects tools, centralizes brand truth, and
+            embeds senior human judgment into AI-powered workflows.</p>
+          <p class="body-lg" style="margin-top:28px;line-height:1.8"><strong>Brand Grade</strong> = quality vs your best
+            approved work.<br><strong>Brand Drift</strong> = deviation from Brand DNA.<br><strong>Human
+              Intelligence</strong> = senior judgment embedded as system logic.</p>
           <div style="display:flex;gap:24px;margin-top:48px;flex-wrap:wrap">
             <div
               style="text-align:center;padding:24px 28px;background:var(--warm-white);border-radius:16px;box-shadow:0 2px 20px rgba(0,0,0,0.04)">
@@ -788,57 +927,45 @@
             </div>
           </div>
         </div>
-
         <div class="card-dark" style="padding:52px 44px">
           <div
             style="width:64px;height:64px;background:linear-gradient(135deg,var(--orange),#f59e0b);border-radius:16px;display:flex;align-items:center;justify-content:center;margin-bottom:28px">
             <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2">
               <path d="M12 2L2 7l10 5 10-5-10-5z" />
               <path d="M2 17l10 5 10-5M2 12l10 5 10-5" />
-            </svg>
-          </div>
-          <p style="font-family:var(--serif);font-size:1.75rem;font-style:italic;line-height:1.4;color:#fff">This isn’t
-            a generator.</p>
-          <p style="font-size:1.1rem;line-height:1.7;margin-top:18px;opacity:0.88">
-            It’s the operating layer that turns creative output into governed execution —
-            and turns human decisions into learning.
-          </p>
-          <p style="font-size:0.95rem;line-height:1.7;margin-top:18px;opacity:0.75">
-            Machines handle scale and signal. Humans keep meaning and accountability in the circuit.
-          </p>
+            </svg></div>
+          <p style="font-family:var(--serif);font-size:1.75rem;font-style:italic;line-height:1.4;color:#fff">The scarce
+            resource is not content.</p>
+          <p style="font-size:1.1rem;line-height:1.7;margin-top:18px;opacity:0.88">It is experienced human judgment.
+            BrandStudios.AI scales that.</p>
+          <p style="font-size:0.95rem;line-height:1.7;margin-top:18px;opacity:0.75">Machines handle scale and signal.
+            Humans keep meaning and accountability in the circuit.</p>
         </div>
       </div>
     </div>
     <div class="slide-footer"><span class="logo">BrandStudios<span>.AI</span></span><span>3</span></div>
   </section>
 
-  <!-- Slide 4: Platform Diagram -->
+  <!-- Slide 4: Operating System Diagram -->
   <section class="slide">
     <div class="slide-inner">
       <div class="split">
         <div>
-          <h2 class="headline">BrandStudios.AI<br><em>Platform</em></h2>
-          <p class="body-md" style="margin-top:32px;color:var(--text-light)">
-            Brand DNA → Creative Studio → Quality Gates → Human Intelligence → Insight Loop → updates Brand DNA
-          </p>
-
-          <p class="body-md" style="margin-top:24px;margin-bottom:24px">
-            This is not automation. This is operating infrastructure for enterprise creative.
-          </p>
-
-          <p class="subhead" style="margin-top:28px;font-weight:500;color:var(--navy)">
-            One system.<br>One memory.<br>One evolving intelligence.
-          </p>
-          <p class="statement" style="margin-top:40px">
-            Automation runs first.<br>Human intelligence governs the system.
+          <p class="eyebrow">The Operating System</p>
+          <h2 class="headline">BrandStudios.AI<br><em>Operating System</em></h2>
+          <p class="body-md" style="margin-top:32px;color:var(--text-light)">Brand DNA → Creative Studio → Quality Gates
+            → Human Intelligence → Insight Loop → updates Brand DNA</p>
+          <p class="body-lg" style="margin-top:24px;margin-bottom:24px;font-weight:600;color:var(--navy)">This is not
+            automation. This is operating infrastructure for enterprise creative. It is the system of record for brand
+            judgment.</p>
+          <p class="subhead" style="margin-top:28px;font-weight:500;color:var(--navy)">One system.<br>One memory.<br>One
+            evolving intelligence.</p>
+          <p class="statement" style="margin-top:40px">Automation runs first.<br>Human intelligence governs the system.
           </p>
         </div>
-
-        <div style="display:flex;align-items:center;justify-content:center;min-height:100%">
-          <img src="brand_dna_transparent_v2.png"
-            alt="BrandStudios.AI Platform Diagram - Brand Memory, Creative Studio, Insight Loop connected around Brand DNA"
-            style="width:100%;max-width:500px;height:auto">
-        </div>
+        <div style="display:flex;align-items:center;justify-content:center;min-height:100%"><img
+            src="brand_dna_transparent_v2.png" alt="BrandStudios.AI Operating System Diagram"
+            style="width:100%;max-width:500px;height:auto"></div>
       </div>
     </div>
     <div class="slide-footer"><span class="logo">BrandStudios<span>.AI</span></span><span>4</span></div>
@@ -847,8 +974,8 @@
   <!-- Slide 5: What It Does -->
   <section class="slide">
     <div class="slide-inner">
+      <p class="eyebrow">Capabilities</p>
       <h2 class="headline" style="margin-bottom:56px"><em>What BrandStudios.AI Does</em></h2>
-
       <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:36px">
         <div class="card-white" style="padding:36px">
           <div
@@ -856,60 +983,120 @@
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#e85d2d" stroke-width="2">
               <circle cx="12" cy="12" r="10" />
               <path d="M12 16v-4M12 8h.01" />
-            </svg>
-          </div>
+            </svg></div>
           <h3 style="font-weight:700;font-size:1.1rem;color:var(--navy);margin-bottom:20px">Centralize</h3>
           <p class="body-md" style="margin-bottom:16px">Builds your <strong>Brand DNA</strong> from your best approved
             work</p>
           <p class="body-md">Captures patterns in practice — not static guidelines</p>
         </div>
-
         <div class="card-white" style="padding:36px">
           <div
             style="width:48px;height:48px;background:rgba(16,185,129,0.1);border-radius:12px;display:flex;align-items:center;justify-content:center;margin-bottom:24px">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2">
               <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
               <path d="M22 4L12 14.01l-3-3" />
-            </svg>
-          </div>
+            </svg></div>
           <h3 style="font-weight:700;font-size:1.1rem;color:var(--navy);margin-bottom:20px">Govern</h3>
           <p class="body-md" style="margin-bottom:16px">Scores assets for <strong>Brand Grade</strong> and <strong>Brand
               Drift</strong> — determining whether they qualify to move forward</p>
           <p class="body-md">Routes work through <strong>Quality Gates</strong> with humans in the loop</p>
         </div>
-
         <div class="card-white" style="padding:36px">
           <div
             style="width:48px;height:48px;background:rgba(91,143,217,0.1);border-radius:12px;display:flex;align-items:center;justify-content:center;margin-bottom:24px">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#5b8fd9" stroke-width="2">
               <path d="M21 12a9 9 0 11-9-9c2.52 0 4.93 1 6.74 2.74L21 8" />
               <path d="M21 3v5h-5" />
-            </svg>
-          </div>
+            </svg></div>
           <h3 style="font-weight:700;font-size:1.1rem;color:var(--navy);margin-bottom:20px">Learn</h3>
           <p class="body-md" style="margin-bottom:16px">Turns approvals, edits, and outcomes into learning through the
             <strong>Insight Loop</strong></p>
           <p class="body-md">Reduces drift over time by compounding human judgment</p>
         </div>
       </div>
-
       <div
         style="text-align:center;margin-top:48px;padding:28px 40px;background:var(--warm-white);border-radius:16px;box-shadow:0 2px 24px rgba(0,0,0,0.03)">
-        <p class="body-lg" style="font-weight:600;color:var(--navy)">
-          Creative scale works when the system learns — governed by Brand Fidelity.
-        </p>
+        <p class="body-lg" style="font-weight:600;color:var(--navy)">Governance is upstream, not review. Learning
+          compounds instead of resetting.</p>
       </div>
     </div>
     <div class="slide-footer"><span class="logo">BrandStudios<span>.AI</span></span><span>5</span></div>
   </section>
 
-  <!-- Slide 6: System pillars -->
+  <!-- Slide 6: Brand Fidelity (moved from 9) -->
+  <section class="slide">
+    <div class="slide-inner">
+      <div class="split">
+        <div>
+          <p class="eyebrow">Measurement</p>
+          <h2 class="headline"><em>Brand Fidelity</em></h2>
+          <p class="body-lg" style="margin-top:32px;font-weight:500">Brand Fidelity answers a simple question: can the
+            brand scale without losing its identity — and without creating governance bottlenecks?</p>
+          <p class="body-md" style="margin-top:24px">Every asset is evaluated against the brand's best approved work.
+            The platform measures quality, detects drift, and routes the right work to the right humans.</p>
+          <div style="margin-top:36px">
+            <p class="body-lg"><strong style="color:var(--orange)">Brand Grade</strong> = quality vs your best approved
+              work</p>
+            <p class="body-lg" style="margin-top:10px"><strong style="color:var(--orange)">Brand Drift</strong> =
+              deviation from Brand DNA</p>
+            <p class="body-lg" style="margin-top:10px"><strong style="color:var(--orange)">Brand Fidelity</strong> =
+              Grade balanced against Drift — with human judgment where it matters</p>
+          </div>
+          <p class="body-md" style="margin-top:24px;color:var(--text-light)">This is how you prevent "looks on-brand"
+            work from turning into reputational risk at scale.</p>
+        </div>
+        <div class="fidelity-card">
+          <div class="fidelity-header">
+            <div>
+              <p class="fidelity-title">BrandStudios.AI — Brand Fidelity Summary</p>
+              <p class="fidelity-subtitle">Asset Evaluation Snapshot</p>
+            </div>
+            <div style="text-align:right">
+              <p class="fidelity-score">92.14%</p>
+            </div>
+          </div>
+          <div class="fidelity-row"><span>Brand Similarity</span>
+            <div class="fidelity-bar">
+              <div class="fidelity-fill" style="width:100%"></div>
+            </div><span class="status status-pass">✓ Strong</span>
+          </div>
+          <div class="fidelity-row"><span>Color Alignment</span>
+            <div class="fidelity-bar">
+              <div class="fidelity-fill" style="width:97%"></div>
+            </div><span class="status status-pass">✓ Strong</span>
+          </div>
+          <div class="fidelity-row"><span>Visual Consistency</span>
+            <div class="fidelity-bar">
+              <div class="fidelity-fill" style="width:100%"></div>
+            </div><span class="status status-pass">✓ Strong</span>
+          </div>
+          <div class="fidelity-row"><span>Composition</span>
+            <div class="fidelity-bar">
+              <div class="fidelity-fill moderate" style="width:50%"></div>
+            </div><span class="status status-warn">⚠ Review</span>
+          </div>
+          <div class="fidelity-row" style="border:none"><span>Quality Checks</span>
+            <div class="fidelity-bar">
+              <div class="fidelity-fill" style="width:100%"></div>
+            </div><span class="status status-pass">✓ Clean</span>
+          </div>
+          <div class="fidelity-result"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+              style="width:20px;height:20px;flex-shrink:0">
+              <path d="M20 6L9 17l-5-5" />
+            </svg>PASS — Auto-approved at 92.14%</div>
+        </div>
+      </div>
+    </div>
+    <div class="slide-footer"><span class="logo">BrandStudios<span>.AI</span></span><span>6</span></div>
+  </section>
+
+  <!-- Slide 7: Five Pillars -->
   <section class="slide">
     <div class="slide-inner">
       <div class="center">
+        <p class="eyebrow">How It Works</p>
         <h2 class="headline">How BrandStudios.AI Works<br><em>One Living Intelligence</em></h2>
       </div>
-
       <div class="pillars-5">
         <div class="pillar">
           <div class="pillar-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#5b8fd9"
@@ -918,9 +1105,8 @@
               <path d="M12 6v6l4 2" />
             </svg></div>
           <h3 class="pillar-title">Brand Memory</h3>
-          <p class="pillar-text">Your brand’s living truth — captured as Brand DNA, strengthened by use.</p>
+          <p class="pillar-text">Your brand's living truth — captured as Brand DNA, strengthened by use.</p>
         </div>
-
         <div class="pillar">
           <div class="pillar-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#6a8f66"
               stroke-width="2">
@@ -930,7 +1116,6 @@
           <h3 class="pillar-title">Creative Studio</h3>
           <p class="pillar-text">A connected environment where AI accelerates and humans decide.</p>
         </div>
-
         <div class="pillar">
           <div class="pillar-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#666"
               stroke-width="2">
@@ -940,7 +1125,6 @@
           <h3 class="pillar-title">Quality Gate</h3>
           <p class="pillar-text">Moves work forward when it meets thresholds and acceptable drift.</p>
         </div>
-
         <div class="pillar">
           <div class="pillar-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#10b981"
               stroke-width="2">
@@ -949,9 +1133,9 @@
               <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" />
             </svg></div>
           <h3 class="pillar-title">Human Intelligence</h3>
-          <p class="pillar-text">Judgment stays central. Every decision becomes signal.</p>
+          <p class="pillar-text">Senior human judgment embedded as system logic. Decisions don't just approve work. They
+            train the system.</p>
         </div>
-
         <div class="pillar">
           <div class="pillar-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#e07a5f"
               stroke-width="2">
@@ -962,175 +1146,122 @@
           <p class="pillar-text">Turns outcomes into learning. Raises the baseline each cycle.</p>
         </div>
       </div>
-
-      <p class="statement center" style="border:none;padding:0;margin-top:56px">
-        Identity → Create → Measure → Learn → Identity.<br>
-        The system gets sharper because people stay in it.
-      </p>
-    </div>
-    <div class="slide-footer"><span class="logo">BrandStudios<span>.AI</span></span><span>6</span></div>
-  </section>
-
-  <!-- Slide 7: How it works detail -->
-  <section class="slide">
-    <div class="slide-inner">
-      <h2 class="headline" style="margin-bottom:12px">How It Works</h2>
-      <p class="body-lg" style="color:var(--text-light);margin-bottom:44px">
-        Tools create content. BrandStudios.AI governs which assets meet Brand Grade — regardless of whether they were
-        made by AI, an agency, or your internal teams.
-      </p>
-
-      <div style="display:grid;grid-template-columns:260px 1fr 260px;gap:24px">
-        <div class="card-dark" style="padding:32px">
-          <p style="font-size:0.65rem;text-transform:uppercase;letter-spacing:0.12em;opacity:0.5;margin-bottom:8px">
-            Foundation</p>
-          <h3 style="font-size:1.15rem;font-weight:700;margin-bottom:18px">Brand DNA</h3>
-          <p
-            style="font-size:3rem;font-weight:600;background:linear-gradient(135deg,#e85d2d,#f59e0b);-webkit-background-clip:text;-webkit-text-fill-color:transparent;line-height:1">
-            1,200+</p>
-          <p style="font-size:0.8rem;opacity:0.5;margin-bottom:24px">attributes captured</p>
-          <p style="font-size:0.9rem;opacity:0.85;line-height:1.6">
-            Your best approved work, decoded.<br>
-            The system learns what Brand Grade looks like for your brand.
-          </p>
-        </div>
-
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:18px">
-          <div class="card-white" style="padding:24px;border-left:4px solid var(--orange)">
-            <span
-              style="display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;background:var(--orange);color:#fff;border-radius:8px;font-size:0.75rem;font-weight:700;margin-bottom:14px">01</span>
-            <h4 style="font-weight:700;font-size:0.95rem;margin-bottom:8px">Creative Requests</h4>
-            <p style="font-size:0.85rem;color:var(--text-light);line-height:1.55;margin-bottom:14px">
-              Briefs flow in. Brand DNA attaches automatically — identity is present at the start.
-            </p>
-            <div style="display:flex;gap:6px;flex-wrap:wrap">
-              <span style="font-size:0.7rem;padding:5px 12px;background:#f0f0ee;border-radius:100px">Social</span>
-              <span style="font-size:0.7rem;padding:5px 12px;background:#f0f0ee;border-radius:100px">Email</span>
-              <span style="font-size:0.7rem;padding:5px 12px;background:#f0f0ee;border-radius:100px">Ads</span>
-              <span style="font-size:0.7rem;padding:5px 12px;background:#f0f0ee;border-radius:100px">Web</span>
-            </div>
-          </div>
-
-          <div class="card-white" style="padding:24px;border-left:4px solid var(--orange)">
-            <span
-              style="display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;background:var(--orange);color:#fff;border-radius:8px;font-size:0.75rem;font-weight:700;margin-bottom:14px">02</span>
-            <h4 style="font-weight:700;font-size:0.95rem;margin-bottom:8px">Creation</h4>
-            <p style="font-size:0.85rem;color:var(--text-light);line-height:1.55;margin-bottom:14px">
-              Work is produced in any tool. Every asset is evaluated against Brand DNA — not guesswork.
-            </p>
-            <div style="display:flex;gap:6px;flex-wrap:wrap">
-              <span style="font-size:0.7rem;padding:5px 12px;background:#f0f0ee;border-radius:100px">Human-made</span>
-              <span style="font-size:0.7rem;padding:5px 12px;background:#f0f0ee;border-radius:100px">AI-assisted</span>
-              <span style="font-size:0.7rem;padding:5px 12px;background:#f0f0ee;border-radius:100px">Agency</span>
-            </div>
-          </div>
-
-          <div class="card-white" style="padding:24px;border-left:4px solid var(--orange)">
-            <span
-              style="display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;background:var(--orange);color:#fff;border-radius:8px;font-size:0.75rem;font-weight:700;margin-bottom:14px">03</span>
-            <h4 style="font-weight:700;font-size:0.95rem;margin-bottom:8px">Quality Gates</h4>
-            <p style="font-size:0.85rem;color:var(--text-light);line-height:1.55;margin-bottom:14px">
-              Aligned work moves forward automatically. Edge cases are routed with clarity and context.
-            </p>
-            <div style="display:flex;gap:6px;flex-wrap:wrap">
-              <span
-                style="font-size:0.7rem;padding:5px 12px;background:rgba(16,185,129,0.15);color:#059669;border-radius:100px">Auto-Approved</span>
-              <span style="font-size:0.7rem;padding:5px 12px;background:#f0f0ee;border-radius:100px">Review</span>
-              <span style="font-size:0.7rem;padding:5px 12px;background:#f0f0ee;border-radius:100px">Hold</span>
-            </div>
-          </div>
-
-          <div class="card-white" style="padding:24px;border-left:4px solid #10b981">
-            <span
-              style="display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;background:#10b981;color:#fff;border-radius:8px;font-size:0.75rem;font-weight:700;margin-bottom:14px">04</span>
-            <h4 style="font-weight:700;font-size:0.95rem;margin-bottom:8px">Human Intelligence</h4>
-            <p style="font-size:0.85rem;color:var(--text-light);line-height:1.55;margin-bottom:14px">
-              Experts decide on nuance and high-impact work. Every decision becomes learning signal.
-            </p>
-            <div style="display:flex;gap:6px;flex-wrap:wrap">
-              <span
-                style="font-size:0.7rem;padding:5px 12px;background:rgba(16,185,129,0.15);color:#059669;border-radius:100px">Approve</span>
-              <span style="font-size:0.7rem;padding:5px 12px;background:#f0f0ee;border-radius:100px">Edit</span>
-              <span style="font-size:0.7rem;padding:5px 12px;background:#f0f0ee;border-radius:100px">Reject</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="card-dark" style="padding:32px">
-          <p style="font-size:0.65rem;text-transform:uppercase;letter-spacing:0.12em;color:#e07a5f;margin-bottom:14px">
-            Continuous</p>
-          <h3 style="font-size:1.3rem;font-weight:700;margin-bottom:24px">Insight Loop</h3>
-
-          <div style="display:flex;align-items:flex-start;gap:12px;margin-bottom:16px">
-            <span
-              style="width:24px;height:24px;background:linear-gradient(135deg,#10b981,#059669);border-radius:6px;display:flex;align-items:center;justify-content:center;flex-shrink:0">
-              <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" style="width:12px;height:12px">
-                <path d="M20 6L9 17l-5-5" />
-              </svg>
-            </span>
-            <span style="font-size:0.9rem;line-height:1.45">Sees what resonates and why</span>
-          </div>
-
-          <div style="display:flex;align-items:flex-start;gap:12px;margin-bottom:16px">
-            <span
-              style="width:24px;height:24px;background:linear-gradient(135deg,#10b981,#059669);border-radius:6px;display:flex;align-items:center;justify-content:center;flex-shrink:0">
-              <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" style="width:12px;height:12px">
-                <path d="M20 6L9 17l-5-5" />
-              </svg>
-            </span>
-            <span style="font-size:0.9rem;line-height:1.45">Detects patterns across teams and channels</span>
-          </div>
-
-          <div style="display:flex;align-items:flex-start;gap:12px;margin-bottom:16px">
-            <span
-              style="width:24px;height:24px;background:linear-gradient(135deg,#10b981,#059669);border-radius:6px;display:flex;align-items:center;justify-content:center;flex-shrink:0">
-              <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" style="width:12px;height:12px">
-                <path d="M20 6L9 17l-5-5" />
-              </svg>
-            </span>
-            <span style="font-size:0.9rem;line-height:1.45">Feeds learning back into Brand DNA</span>
-          </div>
-
-          <div style="margin-top:22px;padding-top:18px;border-top:1px solid rgba(255,255,255,0.1)">
-            <p style="font-size:0.9rem;opacity:0.85;line-height:1.55">
-              The system improves because human judgment stays in the loop.
-            </p>
-          </div>
-        </div>
-      </div>
+      <p class="statement center" style="border:none;padding:0;margin-top:56px">Identity → Create → Measure → Learn →
+        Identity.<br>The system gets sharper because people stay in it.</p>
     </div>
     <div class="slide-footer"><span class="logo">BrandStudios<span>.AI</span></span><span>7</span></div>
   </section>
 
-  <!-- Slide 8: Tool agnostic (AMENDED) -->
+  <!-- Slide 8: The Difference / Comparison -->
+  <section class="slide">
+    <div class="slide-inner">
+      <div class="center">
+        <h2 class="display" style="font-size:clamp(2.5rem,5vw,4rem)"><em>Yes, we create assets. And we govern everything
+            that ships.</em></h2>
+        <p class="body-lg"
+          style="margin-top:32px;max-width:800px;margin-left:auto;margin-right:auto;color:var(--text-light)">Tools
+          generate output. BrandStudios governs decisions and consistency across teams, agencies, and markets.</p>
+      </div>
+      <div class="operating-layer-card">
+        <div class="operating-layer-header">
+          <h4>What Only BrandStudios.AI Does</h4><span class="orchestration-tag">ORCHESTRATION</span>
+        </div>
+        <p class="operating-layer-title">The Human Intelligence Operating Layer</p>
+        <p class="operating-layer-subtitle">Carries senior human judgment into every decision, governs what ships, and
+          learns from every approval.</p>
+        <div class="operating-layer-grid">
+          <div class="operating-layer-item">
+            <h5 class="blue">Brand DNA</h5>
+            <p>Learns from your best approved work</p>
+          </div>
+          <div class="operating-layer-item">
+            <h5 class="gray">Quality Gates</h5>
+            <p>Brand Grade and Drift scoring on every asset</p>
+          </div>
+          <div class="operating-layer-item">
+            <h5 class="green">Human Intelligence</h5>
+            <p>Judgment in the loop, compounding</p>
+          </div>
+          <div class="operating-layer-item">
+            <h5 class="coral">Tool Agnostic</h5>
+            <p>Connects and governs output from any AI tool</p>
+          </div>
+        </div>
+      </div>
+      <div class="comparison-section">
+        <div class="comparison-header">
+          <div class="comparison-header-cell"></div>
+          <div class="comparison-header-cell tools">
+            <h4>AI-Powered Tools</h4>
+            <h3>AI Creative Tools</h3>
+            <p>Generate assets faster</p>
+            <div class="tool-tags"><span class="tool-tag">Adobe GenStudio</span><span
+                class="tool-tag">Jasper</span><span class="tool-tag">Canva</span><span
+                class="tool-tag">Midjourney</span><span class="tool-tag">ChatGPT</span></div>
+          </div>
+          <div class="comparison-header-cell os">
+            <h4>Operating System</h4>
+            <h3>BrandStudios.AI</h3>
+            <p>Create, govern, and learn at scale</p>
+          </div>
+        </div>
+        <div class="comparison-row">
+          <div class="comparison-cell label">Copy</div>
+          <div class="comparison-cell tools-col"><span class="check">✓</span> AI-generated text and headlines</div>
+          <div class="comparison-cell os-col"><span class="check-green">✓</span> Copy governed by Brand DNA and voice
+          </div>
+        </div>
+        <div class="comparison-row">
+          <div class="comparison-cell label">Images</div>
+          <div class="comparison-cell tools-col"><span class="check">✓</span> AI-generated visuals</div>
+          <div class="comparison-cell os-col"><span class="check-green">✓</span> Images scored for Brand Grade</div>
+        </div>
+        <div class="comparison-row">
+          <div class="comparison-cell label">Video</div>
+          <div class="comparison-cell tools-col"><span class="check">✓</span> AI-assisted video creation</div>
+          <div class="comparison-cell os-col"><span class="check-green">✓</span> Video governed by brand standards</div>
+        </div>
+        <div class="comparison-row">
+          <div class="comparison-cell label">Campaigns</div>
+          <div class="comparison-cell tools-col"><span class="check">✓</span> Asset-by-asset production</div>
+          <div class="comparison-cell os-col"><span class="check-green">✓</span> End-to-end campaign systems</div>
+        </div>
+        <div class="comparison-row">
+          <div class="comparison-cell label">Scale</div>
+          <div class="comparison-cell tools-col"><span class="check">✓</span> More assets, faster</div>
+          <div class="comparison-cell os-col"><span class="check-green">✓</span> Scale without drift or governance drag
+          </div>
+        </div>
+        <div class="comparison-row">
+          <div class="comparison-cell label">Memory</div>
+          <div class="comparison-cell tools-col">Session-based, resets each project</div>
+          <div class="comparison-cell os-col"><span class="check-green">✓</span> Persistent Brand Memory, 1,200+
+            attributes</div>
+        </div>
+        <div class="comparison-row">
+          <div class="comparison-cell label">Learning</div>
+          <div class="comparison-cell tools-col">Starts over every project</div>
+          <div class="comparison-cell os-col"><span class="check-green">✓</span> Every approval makes the system smarter
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="slide-footer"><span class="logo">BrandStudios<span>.AI</span></span><span>8</span></div>
+  </section>
+
+  <!-- Slide 9: Tool agnostic -->
   <section class="slide">
     <div class="slide-inner">
       <div class="split-wide">
         <div>
+          <p class="eyebrow">Integration</p>
           <h2 class="headline">Tool-Agnostic<br><em>Operating Layer</em></h2>
-
-          <p class="body-lg" style="margin-top:32px;font-weight:600">
-            Your stack stays. The operating system sits above it.
-          </p>
-
-          <p class="body-md" style="margin-top:18px;line-height:1.8">
-            Enterprises already run on a mix of internal teams, agencies, and global toolchains.
-            BrandStudios.AI does not replace that reality.
-            It connects it.
-          </p>
-
-          <p class="body-md" style="margin-top:18px;line-height:1.8">
-            BrandStudios.AI centralizes brand truth once, then applies it everywhere:
-            every market, every channel, every vendor, every tool.
-          </p>
-
-          <p class="body-md" style="margin-top:18px;line-height:1.8">
-            The difference is operational:
-            governance becomes measurable,
-            approvals become focused,
-            and learning compounds instead of resetting each campaign.
-          </p>
-
+          <p class="body-lg" style="margin-top:32px;font-weight:600">Your stack stays. The operating system sits above
+            it.</p>
+          <p class="body-md" style="margin-top:18px;line-height:1.8">Enterprises already run on a mix of internal teams,
+            agencies, and global toolchains. BrandStudios.AI does not replace that reality. It connects it.</p>
+          <p class="body-md" style="margin-top:18px;line-height:1.8">BrandStudios.AI centralizes brand truth once, then
+            applies it everywhere: every market, every channel, every vendor, every tool.</p>
           <p class="body-md" style="margin-top:28px">What changes in practice:</p>
           <ul class="feature-list" style="margin-top:12px">
             <li><strong style="color:var(--orange)">Higher auto-approval rates at Brand Grade thresholds</strong></li>
@@ -1139,7 +1270,6 @@
             <li><strong style="color:var(--orange)">Performance becomes learning, not debate</strong></li>
           </ul>
         </div>
-
         <div class="tools-container">
           <div class="tools-header">
             <h3>BrandStudios.AI</h3>
@@ -1173,101 +1303,17 @@
           </div>
         </div>
       </div>
-
-      <p class="statement center" style="border:none;padding:0;margin-top:44px">
-        Enterprise-ready by default — secure, native, and built to fit your stack.
-      </p>
-    </div>
-    <div class="slide-footer"><span class="logo">BrandStudios<span>.AI</span></span><span>8</span></div>
-  </section>
-
-  <!-- Slide 9: Proof (AMENDED: clearer + more enterprise) -->
-  <section class="slide">
-    <div class="slide-inner">
-      <div class="split">
-        <div>
-          <h2 class="headline"><em>Brand Fidelity</em></h2>
-          <p class="body-lg" style="margin-top:32px;font-weight:500">
-            Brand Fidelity is whether your brand can scale without losing its identity — and without creating governance
-            bottlenecks.
-          </p>
-          <p class="body-md" style="margin-top:24px">
-            Every asset is evaluated against the brand’s best approved work.
-            The platform measures quality, detects drift, and routes the right work to the right humans.
-          </p>
-
-          <div style="margin-top:36px">
-            <p class="body-lg"><strong style="color:var(--orange)">Brand Grade</strong> = quality vs your best approved
-              work</p>
-            <p class="body-lg" style="margin-top:10px"><strong style="color:var(--orange)">Brand Drift</strong> =
-              deviation from Brand DNA</p>
-            <p class="body-lg" style="margin-top:10px"><strong style="color:var(--orange)">Brand Fidelity</strong> =
-              Brand Grade balanced against Brand Drift — with human judgment where it matters</p>
-          </div>
-
-          <p class="body-md" style="margin-top:24px;color:var(--text-light)">
-            This is how you prevent “looks on-brand” work from turning into reputational risk at scale.
-          </p>
-        </div>
-
-        <div class="fidelity-card">
-          <div class="fidelity-header">
-            <div>
-              <p class="fidelity-title">BrandStudios.AI — Brand Fidelity Summary</p>
-              <p class="fidelity-subtitle">Asset Evaluation Snapshot</p>
-            </div>
-            <div style="text-align:right">
-              <p class="fidelity-score">92.14%</p>
-            </div>
-          </div>
-
-          <div class="fidelity-row"><span>Brand Similarity</span>
-            <div class="fidelity-bar">
-              <div class="fidelity-fill" style="width:100%"></div>
-            </div><span class="status status-pass">✓ Strong</span>
-          </div>
-          <div class="fidelity-row"><span>Color Alignment</span>
-            <div class="fidelity-bar">
-              <div class="fidelity-fill" style="width:97%"></div>
-            </div><span class="status status-pass">✓ Strong</span>
-          </div>
-          <div class="fidelity-row"><span>Visual Consistency</span>
-            <div class="fidelity-bar">
-              <div class="fidelity-fill" style="width:100%"></div>
-            </div><span class="status status-pass">✓ Strong</span>
-          </div>
-          <div class="fidelity-row"><span>Composition</span>
-            <div class="fidelity-bar">
-              <div class="fidelity-fill moderate" style="width:50%"></div>
-            </div><span class="status status-warn">⚠ Review</span>
-          </div>
-          <div class="fidelity-row" style="border:none"><span>Quality Checks</span>
-            <div class="fidelity-bar">
-              <div class="fidelity-fill" style="width:100%"></div>
-            </div><span class="status status-pass">✓ Clean</span>
-          </div>
-
-          <div class="fidelity-result">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
-              style="width:20px;height:20px;flex-shrink:0">
-              <path d="M20 6L9 17l-5-5" />
-            </svg>
-            PASS — Auto-approved at 92.14%
-          </div>
-        </div>
-      </div>
     </div>
     <div class="slide-footer"><span class="logo">BrandStudios<span>.AI</span></span><span>9</span></div>
   </section>
 
-  <!-- Slide 10: Enterprise Outcomes (AMENDED: less “modeled”, more enterprise utility) -->
+  <!-- Slide 10: Enterprise Outcomes -->
   <section class="slide">
     <div class="slide-inner">
+      <p class="eyebrow">Performance Signals</p>
       <h2 class="headline"><em>Enterprise</em> Outcomes</h2>
-      <p class="body-lg" style="margin-top:24px">
-        When you centralize brand truth and embed human judgment into the workflow, scale stops creating chaos.
-      </p>
-
+      <p class="body-lg" style="margin-top:24px">When you centralize brand truth and embed human judgment into the
+        workflow, scale stops creating chaos.</p>
       <div class="metrics">
         <div class="metric" style="border-top:4px solid var(--orange)">
           <p
@@ -1281,10 +1327,9 @@
             <div style="display:flex;justify-content:space-between"><span>Governance issues</span><span class="positive"
                 style="font-weight:600">↓ 70%</span></div>
           </div>
-          <p style="font-size:0.75rem;color:var(--text-light);margin-top:18px;font-style:italic">Illustrative benchmarks
-          </p>
+          <p style="font-size:0.75rem;color:var(--text-light);margin-top:18px;font-style:italic">Early signals observed
+            in real workflows.</p>
         </div>
-
         <div class="metric" style="border-top:4px solid #10b981">
           <p
             style="font-size:0.7rem;font-weight:600;text-transform:uppercase;letter-spacing:0.1em;color:var(--text-light);margin-bottom:20px">
@@ -1295,10 +1340,9 @@
             <div style="display:flex;justify-content:space-between"><span>Turnaround</span><span class="positive"
                 style="font-weight:600">↓ 65%</span></div>
           </div>
-          <p style="font-size:0.75rem;color:var(--text-light);margin-top:18px;font-style:italic">Illustrative benchmarks
-          </p>
+          <p style="font-size:0.75rem;color:var(--text-light);margin-top:18px;font-style:italic">Early signals observed
+            in real workflows.</p>
         </div>
-
         <div class="metric" style="border-top:4px solid var(--blue)">
           <p
             style="font-size:0.7rem;font-weight:600;text-transform:uppercase;letter-spacing:0.1em;color:var(--text-light);margin-bottom:20px">
@@ -1309,131 +1353,48 @@
             <div style="display:flex;justify-content:space-between"><span>Compliant output</span><span class="positive"
                 style="font-weight:600">↑ 230%</span></div>
           </div>
-          <p style="font-size:0.75rem;color:var(--text-light);margin-top:18px;font-style:italic">Illustrative benchmarks
-          </p>
+          <p style="font-size:0.75rem;color:var(--text-light);margin-top:18px;font-style:italic">Early signals observed
+            in real workflows.</p>
         </div>
       </div>
-
-      <p class="statement center" style="border:none;padding:0;margin-top:56px">
-        The principle holds: scale improves when the system learns from people.
-      </p>
+      <p class="statement center" style="border:none;padding:0;margin-top:56px">The principle holds: scale improves when
+        the system learns from people.</p>
     </div>
     <div class="slide-footer"><span class="logo">BrandStudios<span>.AI</span></span><span>10</span></div>
   </section>
 
-  <!-- Slide 11: Rights (AMENDED: stronger + clearer, keep structure) -->
+  <!-- Slide 11: Why Timing Matters -->
   <section class="slide">
-    <div class="slide-inner">
-      <h2 class="headline">Using Your Existing Assets<br><em>Safely With AI</em></h2>
-      <p class="body-lg" style="margin-top:24px;color:var(--text-light)">
-        Enterprises don’t just need speed. They need control.
-        BrandStudios.AI helps you use assets you already have rights to — with governance that follows the asset through
-        the workflow.
-      </p>
-
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:44px;margin-top:48px">
-        <div>
-          <h3
-            style="font-weight:700;font-size:0.75rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--orange);margin-bottom:28px">
-            How Rights Are Protected</h3>
-          <div style="display:grid;gap:20px">
-            <div class="card-white" style="padding:24px 28px;display:flex;gap:18px;align-items:flex-start">
-              <div
-                style="width:32px;height:32px;background:rgba(16,185,129,0.1);border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5">
-                  <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
-                  <path d="M22 4L12 14.01l-3-3" />
-                </svg>
-              </div>
-              <p class="body-md">AI does not expand restricted usage or alter photographer or talent agreements</p>
-            </div>
-
-            <div class="card-white" style="padding:24px 28px;display:flex;gap:18px;align-items:flex-start">
-              <div
-                style="width:32px;height:32px;background:rgba(16,185,129,0.1);border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5">
-                  <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
-                  <path d="M22 4L12 14.01l-3-3" />
-                </svg>
-              </div>
-              <p class="body-md">Rights and constraints follow each asset through your workflow, not just in a library
-              </p>
-            </div>
-
-            <div class="card-white" style="padding:24px 28px;display:flex;gap:18px;align-items:flex-start">
-              <div
-                style="width:32px;height:32px;background:rgba(16,185,129,0.1);border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5">
-                  <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
-                  <path d="M22 4L12 14.01l-3-3" />
-                </svg>
-              </div>
-              <p class="body-md">AI-generated outputs are treated as new governed assets with clear auditability in the
-                system</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="card-dark" style="padding:36px;align-self:start">
-          <h3
-            style="font-weight:700;font-size:0.75rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--orange);margin-bottom:20px">
-            For Future Shoots</h3>
-          <p style="font-size:1.05rem;font-weight:500;margin-bottom:28px;line-height:1.5">
-            We recommend negotiating AI-friendly terms:
-          </p>
-          <div style="display:grid;gap:16px">
-            <div style="display:flex;align-items:center;gap:14px"><span
-                style="width:8px;height:8px;background:var(--orange);border-radius:50%"></span><span
-                style="font-size:0.95rem">Derivative and synthetic derivative rights</span></div>
-            <div style="display:flex;align-items:center;gap:14px"><span
-                style="width:8px;height:8px;background:var(--orange);border-radius:50%"></span><span
-                style="font-size:0.95rem">Digital adaptation rights</span></div>
-            <div style="display:flex;align-items:center;gap:14px"><span
-                style="width:8px;height:8px;background:var(--orange);border-radius:50%"></span><span
-                style="font-size:0.95rem">Model-assisted usage rights</span></div>
-            <div style="display:flex;align-items:center;gap:14px"><span
-                style="width:8px;height:8px;background:var(--orange);border-radius:50%"></span><span
-                style="font-size:0.95rem">Perpetual usage across emerging formats</span></div>
-          </div>
-        </div>
+    <div class="slide-inner narrow center">
+      <p class="eyebrow">Why Timing Matters</p>
+      <h2 class="headline">The Next Layer</h2>
+      <p class="body-xl" style="margin-top:48px">The market will ship more generation and more automation.</p>
+      <p class="body-xl" style="margin-top:18px">Enterprises will win with systems that centralize truth and learn from
+        judgment.</p>
+      <div class="cta-card">
+        <p>Generators increase output.<br>BrandStudios.AI increases understanding.</p>
+      </div>
+      <p class="statement" style="text-align:center;border:none;padding:0;margin-top:48px">Tools will
+        multiply.<br>Operating systems will decide.</p>
+      <div
+        style="margin-top:48px;padding:28px 40px;background:var(--warm-white);border-radius:16px;box-shadow:0 2px 24px rgba(0,0,0,0.03);display:inline-block">
+        <p class="body-lg" style="font-weight:600;color:var(--navy)">Waiting is not neutral. Every delay compounds
+          dilution and deepens dependency on closed systems.</p>
       </div>
     </div>
     <div class="slide-footer"><span class="logo">BrandStudios<span>.AI</span></span><span>11</span></div>
   </section>
 
-  <!-- Slide 12: Category contrast (AMENDED) -->
-  <section class="slide">
-    <div class="slide-inner narrow center">
-      <h2 class="headline">The Next Layer</h2>
-      <p class="body-xl" style="margin-top:48px">
-        The market will ship more generation and more automation.
-      </p>
-      <p class="body-xl" style="margin-top:18px">
-        Enterprises will win with systems that centralize truth and learn from judgment.
-      </p>
-
-      <div class="cta-card">
-        <p>
-          Generators increase output.<br>
-          BrandStudios.AI increases understanding.
-        </p>
-      </div>
-
-      <p class="statement" style="text-align:center;border:none;padding:0;margin-top:48px">
-        Tools will multiply.<br>
-        Operating systems will decide.
-      </p>
-    </div>
-    <div class="slide-footer"><span class="logo">BrandStudios<span>.AI</span></span><span>12</span></div>
-  </section>
-
-  <!-- Slide 13: Closing (AMENDED: removed email) -->
+  <!-- Slide 12: Closing -->
   <section class="slide">
     <div class="slide-inner center">
-      <p class="body-lg" style="color:var(--text-light)">
-        If Brand Grade must hold at scale, the system must govern it — and learn from people.
-      </p>
-      <h2 class="display" style="margin-top:32px">Enterprise creative.<br><em>Governed and learning.</em></h2>
+      <p class="body-lg" style="color:var(--text-light)">If Brand Grade must hold at scale, the system must govern it —
+        and learn from people.</p>
+      <h2 class="display" style="margin-top:32px">Human Intelligence,<br><em>Amplified.</em></h2>
+      <p class="body-lg"
+        style="margin-top:32px;max-width:700px;margin-left:auto;margin-right:auto;color:var(--text-light)">
+        BrandStudios.AI is how enterprises scale human creativity and judgment without flattening either. It is not just
+        a system. It is how human and machine intelligence are meant to work together.</p>
       <div style="margin-top:80px">
         <div class="logo" style="font-size:2.5rem">BrandStudios<span>.AI</span></div>
         <p style="margin-top:24px;color:var(--text-light)">Request an enterprise walkthrough.</p>
@@ -1441,10 +1402,10 @@
     </div>
   </section>
 
-  <!-- Footer strip (not counted as a slide) -->
+  <!-- Footer strip -->
   <section class="slide" style="min-height:auto;padding:48px 80px">
     <div class="slide-inner" style="display:flex;justify-content:space-between;align-items:center">
-      <p style="font-size:0.8rem;color:var(--text-light)">© 2025 BrandStudios.AI — Confidential</p>
+      <p style="font-size:0.8rem;color:var(--text-light)">© 2026 BrandStudios.AI — Confidential</p>
       <div class="logo" style="font-size:1.25rem">BrandStudios<span>.AI</span></div>
       <p style="font-size:0.8rem;color:var(--text-light)">Enterprise Platform Overview</p>
     </div>
